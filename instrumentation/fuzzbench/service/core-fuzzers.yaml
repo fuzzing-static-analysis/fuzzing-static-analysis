@@ -1,0 +1,16 @@
+# Core fuzzers used for benchmarking (excludes variants).
+# These need to be sorted alphabetical.
+fuzzers:
+    - afl
+    - aflfast
+    - aflplusplus
+    - aflsmart
+    - centipede
+    - eclipser
+    - fairfuzz
+    - honggfuzz
+    - libafl
+    - libfuzzer
+    - mopt
+    # - klee               # To be supported later.
+    # - symcc_aflplusplus  # To be supported later.

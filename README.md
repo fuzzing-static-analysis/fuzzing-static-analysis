@@ -12,3 +12,11 @@ This repo is consisted of following folders;
 	- `correlation/experiments/data` contains the output from the feature extraction scripts used in `feature/`. This data is for fuzzbench programs.
 	- `correlation/experiments/data_sbft` contains the output from the feature extraction scripts used in `feature/`. This data is for sbft'23 programs in fuzzbench.
 	- `correlation/scripts/` contains the script to conduct the correlation analysis. Cohen.ipynb is used for the pearson's correlation, and Spearman.ipynb is used for the rank correlation.
+	- `correlation/scripts/fncov_getter.py` is the script to get the function coverage from the experiment data on fuzzbench
+	- `correlation/scripts/fncov.py` is the script to get the actual correlation with the function coverage instead of branch coverage.
+- `prediction` contains the script used to conduct the perdiction using random forest
+	- `prediction/prediction.py` is the main script to perform the actual prediction
+	- `prediction/driver.py` is the script to run the prediction for every fuzzer and compile the fuzzer into a tex table
+
+For the fuzzers we used in the experiment, see https://github.com/AFLplusplus/libafl_fuzzbench. 
+This repo contains all the repo we used to conduct the correlation analysis 
